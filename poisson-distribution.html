@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102221242-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-102221242-1');
+    </script>
+
+    <script data-ad-client="ca-pub-9463984700780669" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <meta name="msvalidate.01" content="85DBCF5F806AB8C9BD2FC30728535125" />
+
+    <meta name="google-site-verification" content="dWWImG59lcpKRGrhVSEW_j8U2jW1vMTG1_J2dUBrF4s" />
+
+    <title>Poisson Probability Distribution</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD GOD, JESUS CHRIST. We are experts in Poisson probability distributions." />
+
+    <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, samdom4peace, math, mathematics, 
+    descriptive statistics, probability, combinatorics, random variable, discrete random variable, continuous random variable, 
+    probability distribution, binomial distribution, poisson distribution, normal distribution, Gaussian distribution, empirical rule, 
+    68 - 95 - 99.7 percent rule, Chebyshev's theorem, uniform distribution, sampling distribution, central limit theorem, 
+    geometric distribution, hypergeometric distribution, outcome, mean value, expected value, " />
+
+    <link href="styles/probability-distribution.css" rel="stylesheet" type="text/css" media="all">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+
+<body>
+    <!-- Header/Home -->
+    <header class="w3-padding-64 khaki" id="quotes">
+        <div class="w3-center">
+            <button class="bible" onclick="solutions('solutionQuotes')">Quotes of the Day</button>
+        </div>
+    
+        <div class="quoteDay w3-content" id="solutionQuotes">
+            <p>
+                <q>
+                    If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the
+                    <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our
+                        FATHER in Heaven prayer)</a> <br>
+                    It is the <b>most powerful prayer</b>.
+                    A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                </q> - Samuel Dominic Chukwuemeka
+            </p>
+            <p id="messages5"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+            <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students.</b></q> - Samuel Chukwuemeka</p>
+        </div>
+    </header>
+    
+    <!--
+    <header>
+        <div class="w3-content" id="solutionQuotes">
+            <p>
+                <q>
+                    If there is one prayer that you should <b>pray/sing</b> every day and every hour, it is the
+                    <a href="https://www.samdomforpeace.com/Theology/prayer.html" target="_blank">LORD's prayer (Our
+                        FATHER in Heaven prayer)</a> <br>
+                    It is the <b>most powerful prayer</b>.
+                    A <b>pure heart</b>, a <b>clean mind</b>, and a <b>clear conscience</b> is necessary for it.
+                </q> - Samuel Dominic Chukwuemeka
+            </p>
+            <p id="messages5"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
+            <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students.</b></q> - Samuel Chukwuemeka
+            </p>
+        </div>
+    </header>
+    -->
+
+    <br><br>
+
+    <!-- Page Content -->
+
+    <h1>Solved Examples: Poisson Distribution</h1>
+
+    <p class="w3-container">
+        <!-- Image in top left corner -->
+        <a href="https://descriptive-statistics.appspot.com" title="Samuel Dominic Chukwuemeka">
+            <img src="images/samdom4peace.jpg" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="images">
+        </a>
+        <a href="https://probability-distribution.appspot.com/#prerequisiteTopics" target="_blank">Prerequisite Topics</a> <br>
+        <a href="https://probability-distribution.appspot.com/probability-distribution-calculators.html#poissonProbability" target="_blank">Poisson Distribution Calculators</a> <br>
+        <a href="https://probability-distribution.appspot.com/#PoissonDistributionTable" target="_blank">Poisson Distribution Table</a> <br>
+        <a href="https://probability-distribution.appspot.com/TI-calculators-ProbabilityDistributions.html" target="_blank">Texas Instruments (TI) calculators for Probability</a> 
+        <br><br>
+
+        <mark>For ACT Students</mark> <br>
+        The ACT is a timed exam...$60$ questions for $60$ minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Some questions will typically take less than a minute a solve. <br>
+        Some questions will typically take more than a minute to solve. <br>
+        The goal is to maximize your time. You use the time saved on those questions you
+        solved in less than a minute, to solve the questions that will take more than a minute. <br>
+        So, you should try to solve each question <b>correctly</b> and <b>timely</b>. <br>
+        So, it is not just solving a question correctly, but solving it <b>correctly on time</b>. <br>
+        Please ensure you attempt <b>all ACT questions</b>. <br>
+        There is no <i>negative</i> penalty for any wrong answer. <br>
+        <b>Use the functions in your TI-84 Plus or TI-Nspire to solve some of the questions in order to save time.</b> <br><br>
+        <mark>For WASSCE Students</mark> <br>
+        Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
+        Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics <br><br>
+        <mark>For NSC Students</mark> <br>
+        <u>For the Questions:</u> <br>
+        Any space included in a number indicates a comma used to separate digits...separating multiples of three digits
+        from behind. <br>
+        Any comma included in a number indicates a decimal point. <br>
+        <u>For the Solutions:</u> <br>
+        Decimals are used appropriately rather than commas <br>
+        Commas are used to separate digits appropriately.
+
+        <br><br>
+
+        Solve all questions. <br>
+        Show all work. <br>
+        You may use Possion Distribution Formulas or Poisson Distribution Tables or both. <br>
+        However, if you are not asked to round your answers; then it is very necessary that you do not use Poisson Distribution Tables. <br>
+        In other words, if you are not asked to round your answers; use Poisson Distribution Formulas. 
+    </p>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (1.) <b>ACT</b> At a local post office, on average, $3$ customers are in line when the post office closes each day. <br>
+                The probability, $P$, that exactly $n$ customers are in line when the post office closes can be modeled by the equation: 
+                $P = \dfrac{3^n e^{-3}}{n!}$ <br>
+                Given that $e^{-3} \approx 0.05$, which of the following values is closest to the probability that exactly $2$ customers 
+                are in line when the post office closes? <br><br>
+                $
+                F.\;\; 0.08 \\[3ex] 
+                G.\;\; 0.11 \\[3ex]
+                H.\;\; 0.15 \\[3ex] 
+                J.\;\; 0.23 \\[3ex] 
+                K.\;\; 0.45 \\[3ex] 
+                $
+                <button class="solutions" onclick="solutions('solutionPD1')">Show/Hide Answer</button>
+                <div class="result" id="solutionPD1">
+                    <br>
+                    <b>Poisson Distribution: Probability in Combinatorics</b> <br><br>
+                    $
+                    P = \dfrac{3^n e^{-3}}{n!} \\[5ex]
+                    n = 2 \\[3ex]
+                    e^{-3} \approx 0.05 \\[3ex]
+                    P = \dfrac{3^2 * 0.05}{2!} \\[5ex]
+                    P = \dfrac{9 * 0.05}{2 * 1} \\[5ex]
+                    P = \dfrac{0.45}{2} \\[5ex]
+                    P = 0.225 \\[3ex]
+                    P \approx 0.23
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (2.) 
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionPD2')">Show/Hide Answer</button>
+                <div class="result" id="solutionPD2">
+                    <br>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (3.) 
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionPD3')">Show/Hide Answer</button>
+                <div class="result" id="solutionPD3">
+                    <br>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (4.) 
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionPD4')">Show/Hide Answer</button>
+                <div class="result" id="solutionPD4">
+                    <br>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (5.) 1,000,000 radioactive atoms of a radioactive element decayed to 974,228 atoms in a year. Assume 365 days in a year. <br>
+                (a.) Calculate the mean number of radioactive atoms that decayed in a day. Round to 3 decimal places as needed. <br>
+                (b.) Determine the probability that 52 radioactive atoms decayed on a given day. Round to 6 decimal places as needed. 
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionPD5')">Show/Hide Answer</button>
+                <div class="result" id="solutionPD5">
+                    <br>
+                    $N_i$ = initial number of atoms present in the radioactive element <br>
+                    $N_r$ = number of atoms remaining in the radioactive element after some time, $t$ <br>
+                    $N_{TD}$ = total number of atoms that has decayed after some time, $t$ <br><br>
+                    $
+                    N_i = N_r + N_{TD} \\[3ex]
+                    N_{TD} = N_i - N_r \\[3ex]
+                    N_{TD} = 1000000 - 974228 \\[3ex]
+                    N_{TD} = 25772\;atoms \\[3ex]
+                    (a.) \\[3ex]
+                    \mu = \dfrac{N_{TD}}{365} \\[5ex]
+                    \mu = \dfrac{25772}{365} \\[5ex]
+                    \mu = 70.60821918 \\[3ex]
+                    \mu \approx 70.608 \\[3ex]
+                    (b.) \\[3ex]
+                    P(x) = \dfrac{\mu^x * e^{-\mu}}{x!} \\[5ex]
+                    x = 52 \\[3ex]
+                    \mu = 70.60821918 \\[3ex]
+                    P(x) = \dfrac{70.60821918^{52} * e^{-70.60821918}}{52!} \\[5ex]
+                    P(x) = 0.003707363 \\[3ex]
+                    P(x) \approx 0.003707
+                    $
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (6.) 
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionPD6')">Show/Hide Answer</button>
+                <div class="result" id="solutionPD6">
+                    <br>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (7.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionPD7')">Show/Hide Answer</button>
+                <div class="result" id="solutionPD7">
+                    <br>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (8.) 
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionPD8')">Show/Hide Answer</button>
+                <div class="result" id="solutionPD8">
+                    <br>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-row w3-container">
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (9.)
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionPD9')">Show/Hide Answer</button>
+                <div class="result" id="solutionPD9">
+                    <br>
+                    
+
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half w3-container">
+            <div class="w3-topbar w3-padding">
+                (10.) 
+                <br><br>
+                <button class="solutions" onclick="solutions('solutionPD10')">Show/Hide Answer</button>
+                <div class="result" id="solutionPD10">
+                    <br>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END PAGE CONTENT -->
+
+
+
+    <!-- Footer -->
+    <footer class="khaki w3-center w3-padding-24">
+        <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel" target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel" /></a>
+        <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img src="images/twitter.png" alt="Follow me on twitter" /></a>
+        <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog" target="_blank"><img src="images/blogger.jpg" alt="Subscribe and follow my blog" /></a>
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-102221242-1' }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <p>&copy; 2022&nbsp;<a href="https://www.samdomforpeace.com/" target="_blank">Samdom4Peace</a>&nbsp;Designs.
+        </p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="scripts/messages5.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+</body>
+
+</html>
