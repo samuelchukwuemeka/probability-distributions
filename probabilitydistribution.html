@@ -1,25 +1,9 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102221242-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
 
-        gtag('config', 'UA-102221242-1');
-    </script>
-
-    <script data-ad-client="ca-pub-9463984700780669" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-    <meta name="msvalidate.01" content="85DBCF5F806AB8C9BD2FC30728535125" />
-
-    <meta name="google-site-verification" content="dWWImG59lcpKRGrhVSEW_j8U2jW1vMTG1_J2dUBrF4s" />
 
     <title>Probability Distribution</title>
 
@@ -27,13 +11,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD GOD, JESUS CHRIST. We are experts in probability distributions." />
+    <meta name="description"
+        content="Samuel Dominic Chukwuemeka (SamDom For Peace) gives all the credit to our LORD GOD, JESUS CHRIST. We are experts in probability distributions.">
 
     <meta name="keywords" content="samuel chukwuemeka, samuel dominic chukwuemeka, samdom for peace, samdom4peace, math, mathematics, 
     descriptive statistics, probability, combinatorics, random variable, discrete random variable, continuous random variable, 
     probability distribution, binomial distribution, poisson distribution, normal distribution, Gaussian distribution, empirical rule, 
     68 - 95 - 99.7 percent rule, Chebyshev's theorem, uniform distribution, sampling distribution, central limit theorem, 
-    geometric distribution, hypergeometric distribution, outcome, mean value, expected value, " />
+    geometric distribution, hypergeometric distribution, outcome, mean value, expected value, ">
 
     <link href="styles/probability-distribution.css" rel="stylesheet" type="text/css" media="all">
 
@@ -48,7 +33,7 @@
         <div class="w3-center">
             <button class="bible" onclick="solutions('solutionQuotes')">Quotes of the Day</button>
         </div>
-    
+
         <div class="quoteDay w3-content" id="solutionQuotes">
             <p>
                 <q>
@@ -60,10 +45,11 @@
                 </q> - Samuel Dominic Chukwuemeka
             </p>
             <p id="messages2"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
-            <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students.</b></q> - Samuel Chukwuemeka</p>
+            <p><q>The <b>Joy</b> of the <b>Teacher</b> is the <b>Success</b> of the <b>Students.</b></q> - Samuel
+                Chukwuemeka</p>
         </div>
     </header>
-    
+
     <!--
     <header>
         <div class="w3-content" id="solutionQuotes">
@@ -77,7 +63,7 @@
                 </q> - Samuel Dominic Chukwuemeka
             </p>
             <p id="messages2"><q>For in GOD we live, and move, and have our being.</q> - Acts 17:28</p>
-            <p><q>The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students.</b></q> - Samuel Chukwuemeka
+            <p><q>The <b>Joy</b> of the <b>Teacher</b> is the <b>Success</b> of the <b>Students.</b></q> - Samuel Chukwuemeka
             </p>
         </div>
     </header>
@@ -91,12 +77,17 @@
 
     <p class="w3-container">
         <!-- Image in top left corner -->
-        <a href="https://descriptive-statistics.appspot.com" title="Samuel Dominic Chukwuemeka">
+        <a href="https://samuelchukwuemeka.github.io/descriptive-statistics/" title="Samuel Dominic Chukwuemeka">
             <img src="images/samuelchukwuemeka.png" alt="Samuel Dominic Chukwuemeka (SamDom For Peace)" class="image">
         </a>
-        <a href="https://probability-distribution.appspot.com/#prerequisiteTopics" target="_blank">Prerequisite Topics</a> <br>
-        <a href="https://probability-distribution.appspot.com/probability-distribution-calculators.html" target="_blank">Probability Distribution Calculators</a> <br>
-        <a href="https://probability-distribution.appspot.com/TI-calculators-probability.html" target="_blank">Texas Instruments (TI) calculators for Probability</a> <br><br>
+        <a href="https://samuelchukwuemeka.github.io/probability-distributions/#prerequisiteTopics"
+            target="_blank">Prerequisite
+            Topics</a> <br>
+        <a href="https://samuelchukwuemeka.github.io/probability-distributions/probability-distribution-calculators.html"
+            target="_blank">Probability Distribution Calculators</a> <br>
+        <a href="https://samuelchukwuemeka.github.io/probability-distributions/TI-calculators-probability.html"
+            target="_blank">Texas
+            Instruments (TI) calculators for Probability</a> <br><br>
 
         <mark>For ACT Students</mark> <br>
         The ACT is a timed exam...60 questions for 60 minutes <br>
@@ -109,7 +100,7 @@
         So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
         Please ensure you attempt <u>all ACT questions</u>. <br>
         There is no <i>negative</i> penalty for any wrong answer. <br><br>
-        
+
         <mark>For WASSCE Students</mark> <br>
         Any question labeled WASCCE is a question for the WASCCE General Mathematics <br>
         Any question labeled WASSCE-FM is a question for the WASSCE Further Mathematics/Elective Mathematics <br><br>
@@ -135,7 +126,7 @@
                 (a.) List the outcomes of his experiment. <br>
                 (b.) List the random variable, $x$ for the number of tails in the outcomes. <br>
                 (c.) Calculate the probability of the random variable, $P(x)$ for the outcomes. <br>
-                (d.) Calculate the mean of the random variable. 
+                (d.) Calculate the mean of the random variable.
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD1')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD1">
@@ -149,10 +140,10 @@
                         <caption>2 coins on row, 2 coins on column</caption>
                         <tr>
                             <th style="width: 20%;"></th>
-                            <th class="green" style="width: 20%;">HH</th> 
-                            <th class="green" style="width: 20%;">HT</th> 
-                            <th class="green" style="width: 20%;">TH</th> 
-                            <th class="green" style="width: 20%;">TT</th> 
+                            <th class="green" style="width: 20%;">HH</th>
+                            <th class="green" style="width: 20%;">HT</th>
+                            <th class="green" style="width: 20%;">TH</th>
+                            <th class="green" style="width: 20%;">TT</th>
                         </tr>
                         <tr>
                             <td class="green"><b>HH</b></td>
@@ -226,7 +217,7 @@
                     (d.) <br>
                     $
                     \mu = \Sigma[x * P(x)] \\[3ex]
-                    \mu = \dfrac{32}{16} \\[5ex] 
+                    \mu = \dfrac{32}{16} \\[5ex]
                     \mu = 2
                     $
                 </div>
@@ -256,7 +247,7 @@
                 The random variable represents the number of boys in a family with three children. <br>
                 (a.) Calculate the mean of the random variable. Round to 2 decimal places. <br>
                 (b.) Calculate the standard deviation of the random variable. Round to 2 decimal places. <br>
-                (c.) Is it unusual for a family with three children to have only boys? 
+                (c.) Is it unusual for a family with three children to have only boys?
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD2')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD2">
@@ -314,12 +305,12 @@
                     \sigma = \sqrt{0.7504} \\[3ex]
                     \sigma = 0.8662563131 \\[3ex]
                     \sigma \approx 0.87 \\[3ex]
-                    (c.) \\[3ex] 
+                    (c.) \\[3ex]
                     \underline{First\;\;Method:\;\;Probability} \\[3ex]
                     P(3) = 0.111 \\[3ex]
                     0.111 \gt 5\% \\[3ex]
                     0.111 \gt 0.05 \\[3ex]
-                    $ 
+                    $
                     Therefore, it is not unusual for a family with three children to have only boys. <br><br>
                     $
                     \underline{Second\;\;Method:\;\;Usual\;\;Values} \\[3ex]
@@ -506,23 +497,23 @@
                     \sigma = \sqrt{2.869151} \\[3ex]
                     \sigma = 1.693856842 \\[3ex]
                     (a.) \\[3ex]
-                    Maximum\;\;usual\;\;value \\[3ex] 
-                    = \mu + 2\sigma \\[3ex] 
-                    = 5.043 + 2(1.693856842) \\[3ex] 
-                    = 5.043 + 3.387713683 \\[3ex] 
-                    = 8.430713683 \\[3ex] 
-                    (b.) \\[3ex] 
-                    Minimum\;\;usual\;\;value \\[3ex] 
-                    = \mu - 2\sigma \\[3ex] 
-                    = 5.043 - 2(1.693856842) \\[3ex] 
-                    = 5.043 - 3.387713683 \\[3ex] 
-                    = 1.655286317 \\[3ex] 
-                    (c.) \\[3ex] 
+                    Maximum\;\;usual\;\;value \\[3ex]
+                    = \mu + 2\sigma \\[3ex]
+                    = 5.043 + 2(1.693856842) \\[3ex]
+                    = 5.043 + 3.387713683 \\[3ex]
+                    = 8.430713683 \\[3ex]
+                    (b.) \\[3ex]
+                    Minimum\;\;usual\;\;value \\[3ex]
+                    = \mu - 2\sigma \\[3ex]
+                    = 5.043 - 2(1.693856842) \\[3ex]
+                    = 5.043 - 3.387713683 \\[3ex]
+                    = 1.655286317 \\[3ex]
+                    (c.) \\[3ex]
                     \underline{First\;\;Method:\;\;Probability} \\[3ex]
                     P(1) = 0.016 \\[3ex]
                     0.016 \lt 5\% \\[3ex]
                     0.016 \lt 0.05 \\[3ex]
-                    $ 
+                    $
                     Therefore, based on the result; 1 girl in 10 births is an unusually low number of girls. <br><br>
                     $
                     \underline{Second\;\;Method:\;\;Usual\;\;Values} \\[3ex]
@@ -535,27 +526,28 @@
 
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (4.) Determine whether each of the following variables would best be modeled as continuous or discrete. <br>
+                (4.) Determine whether each of the following variables would best be modeled as continuous or discrete.
+                <br>
                 (a.) The exact time it takes to evaluate 57 + 75. <br>
                 (b.) The time required to download a file from the internet. <br>
                 (c.) Blood sugar level. <br>
                 (d.) The weight of a T-bone steak. <br>
                 (e.) The number of people with blood type B in a random sample of 52 people. <br>
-                (f.) The length of time to run a marathon. <br>      
+                (f.) The length of time to run a marathon. <br>
                 (g.) The number of fish caught during a fishing tournament. <br>
                 (h.) The height of a randomly selected goat. <br>
-                (i.) The number of science textbook authors. <br> 
+                (i.) The number of science textbook authors. <br>
                 (j.) The number of statistics students at BRCC. <br>
                 (k.) The decibel level of a siren. <br>
                 (m.) The number of mint condition baseballs cards. <br>
-                (n.) The value of a pile of dimes.  
+                (n.) The value of a pile of dimes.
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD4')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD4">
                     <br>
                     <u>Hint:</u> <br>
                     If you can <b>count it</b>, it is <b>discrete.</b> <br>
-                    If you can <b>measure it</b>, it is <b>continuous.</b> 
+                    If you can <b>measure it</b>, it is <b>continuous.</b>
                     <br><br>
                     (a.) The exact time it takes to evaluate 57 + 75. <br>
                     The variable is continuous. <br><br>
@@ -573,7 +565,7 @@
                     The variable is discrete. <br><br>
                     (h.) The height of a randomly selected goat. <br>
                     The variable is continuous. <br><br>
-                    (i.) The number of science textbook authors. <br> 
+                    (i.) The number of science textbook authors. <br>
                     The variable is discrete. <br><br>
                     (j.) The number of statistics students at BRCC. <br>
                     The variable is discrete. <br><br>
@@ -581,7 +573,7 @@
                     The variable is continuous. <br><br>
                     (m.) The number of mint condition baseballs cards. <br>
                     The variable is discrete. <br><br>
-                    (n.) The value of a pile of dimes.  
+                    (n.) The value of a pile of dimes.
                     The variable is discrete.
                 </div>
             </div>
@@ -591,19 +583,20 @@
     <div class="w3-row w3-container">
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (5.) 
+                (5.)
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD5')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD5">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
 
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (6.) The table shows the random variable, $x$ and the probability of the random variable, $P(x)$ <br><br>
+                (6.) The table shows the random variable, $x$ and the probability of the random variable, $P(x)$
+                <br><br>
                 <table class="w3-center">
                     <tr>
                         <td style="width: 50%;">$x$</td>
@@ -663,7 +656,8 @@
                     </tr>
                 </table>
                 <br>
-                The random variable represents the number of Hispanics on a panel of 12 jury in a predominantly Hispanic population. <br>
+                The random variable represents the number of Hispanics on a panel of 12 jury in a predominantly Hispanic
+                population. <br>
                 (a.) Determine the probability of having exactly 5 Hispanics among 12 jurors. <br>
                 (b.) Determine the probability of having 5 or fewer Hispanics among 12 jurors. <br>
                 (c.) Is 5 Hispanics an unusually low number of Hispanics among 12 jurors for that population?
@@ -677,8 +671,8 @@
                     (b.) \\[3ex]
                     P(\le 5) = 0.000 + 0.003 + 0.016 + 0.054 + 0.121 + 0.193 \\[3ex]
                     P(\le 5) = 0.387 \\[3ex]
-                    (c.) \\[3ex] 
-                    0.387 \gt 5\% \\[3ex] 
+                    (c.) \\[3ex]
+                    0.387 \gt 5\% \\[3ex]
                     0.387 \gt 0.05 \\[3ex]
                     $
                     Hence, 5 Hispanics is not an unusually low number of Hispanics among 12 jurors for that population.
@@ -690,7 +684,8 @@
     <div class="w3-row w3-container">
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (7.) A gambler shaved an edge off one side of a six-sided die, and as a result, the die is no longer "fair." <br>
+                (7.) A gambler shaved an edge off one side of a six-sided die, and as a result, the die is no longer
+                "fair." <br>
                 The figure shows a graph of the probability distribution function (pdf). <br>
                 Show the pdf in table format by listing all six possible outcomes and their probabilities. <br><br>
                 <img src="images/Questions/ProbabilityDistribution/Number7.jpg">
@@ -704,10 +699,10 @@
                     \Sigma Probability = 1 \\[3ex]
                     P(1) + P(2) + P(3) + P(4) + P(5) + P(6) = 1 \\[3ex]
                     0.03 + k + k + k + k + 0.03 = 1 \\[3ex]
-                    4k + 0.06 = 1 \\[3ex] 
-                    4k = 1 - 0.06 \\[3ex] 
-                    4k = 0.94 \\[3ex] 
-                    k = \dfrac{0.94}{4} \\[5ex] 
+                    4k + 0.06 = 1 \\[3ex]
+                    4k = 1 - 0.06 \\[3ex]
+                    4k = 0.94 \\[3ex]
+                    k = \dfrac{0.94}{4} \\[5ex]
                     k = 0.235 \\[3ex]
                     $
                     <table class="w3-center">
@@ -737,7 +732,8 @@
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
                 (8.) Cardano plays lottery games. <br>
-                If he picks a sequence of three digits from the numbers 0 through 9 in a lottery game, he will pay <span>$</span>1.35 because he 
+                If he picks a sequence of three digits from the numbers 0 through 9 in a lottery game, he will pay
+                <span>$</span>1.35 because he
                 has to pay <span>$</span>1.35 to play the game. <br>
                 If he picks the same sequence of three digits in a drawing, he will win <span>$</span>487.75 <br>
                 (a.) How many different selections are possible? <br>
@@ -765,7 +761,7 @@
                     (c.) \\[3ex]
                     Net\;\;profit = Winning\;\;amount - Amount\;\;to\;\;play \\[3ex]
                     = 487.75 - 1.35 \\[3ex]
-                    = \$486.40 \\[3ex] 
+                    = \$486.40 \\[3ex]
                     $
                     (d.) <br><br>
                     $
@@ -802,7 +798,7 @@
                     </table>
                     <br>
                     $
-                    E = \Sigma[x * P(x)] \\[3ex] 
+                    E = \Sigma[x * P(x)] \\[3ex]
                     E = -\$0.86225 \\[3ex]
                     E \approx -\$0.86
                     $
@@ -815,24 +811,24 @@
     <div class="w3-row w3-container">
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (9.) 
+                (9.)
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD9')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD9">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
 
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (10.) 
+                (10.)
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD10')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD10">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
@@ -846,19 +842,19 @@
                 <button class="solutions" onclick="solutions('solutionPD11')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD11">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
 
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (12.) 
+                (12.)
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD12')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD12">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
@@ -872,19 +868,19 @@
                 <button class="solutions" onclick="solutions('solutionPD13')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD13">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
 
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (14.) 
+                (14.)
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD14')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD14">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
@@ -898,19 +894,19 @@
                 <button class="solutions" onclick="solutions('solutionPD15')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD15">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
 
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (16.) 
+                (16.)
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD16')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD16">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
@@ -924,19 +920,19 @@
                 <button class="solutions" onclick="solutions('solutionPD17')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD17">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
 
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (18.) 
+                (18.)
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD18')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD18">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
@@ -946,7 +942,7 @@
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
                 (19.) Toss a fair ten-sided die. <br>
-                The probability distribution function (pdf) in table form is given below. 
+                The probability distribution function (pdf) in table form is given below.
                 <br><br>
                 <table class="w3-center">
                     <tr>
@@ -977,7 +973,7 @@
                     </tr>
                 </table>
                 <br>
-                Make a graph of the pdf for the die. 
+                Make a graph of the pdf for the die.
                 <br><br>
                 <img src="images/Questions/ProbabilityDistribution/Number19.jpg" alt="Number 19">
                 <br><br>
@@ -986,7 +982,7 @@
                     <br>
                     $
                     P(1) = P(2) = P(3) = P(4) = P(5) = P(6) = P(7) = P(8) = P(9) = P(10) \\[3ex]
-                    = \dfrac{1}{10} \\[5ex] 
+                    = \dfrac{1}{10} \\[5ex]
                     = 0.1 \\[3ex]
                     $
                     The diagram is Option <b>D.</b> <br><br>
@@ -997,7 +993,8 @@
 
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (20.) When a certain type of thumbtack is flipped, the probability of its landing tip up (U) is  0.55 and the probability of its landing tip down (D) is 0.45. <br>
+                (20.) When a certain type of thumbtack is flipped, the probability of its landing tip up (U) is 0.55 and
+                the probability of its landing tip down (D) is 0.45. <br>
                 Suppose you flip two such thumbtacks, one at a time. <br>
                 Make a list of all the possible arrangements using U for up and D for down. <br>
                 Find the probabilities of each possible outcome.
@@ -1021,7 +1018,7 @@
     <br><br><br><br>
     <!-- Top of the Page -->
     <div class="w3-container" style="position:relative">
-        <a href="https://probability-distribution.appspot.com/probabilitydistribution.html"
+        <a href="https://samuelchukwuemeka.github.io/probability-distributions/probabilitydistribution.html"
             class="w3-button w3-xlarge w3-circle w3-khaki" style="position:absolute;top:-70px;right:24px">Top
         </a>
     </div>
@@ -1030,9 +1027,10 @@
     <div class="w3-row w3-container">
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (21.) When a certain type of thumbtack is flipped, the probability of its landing tip up (U) is  0.55 and the probability of its landing tip down (D) is 0.45. <br>
+                (21.) When a certain type of thumbtack is flipped, the probability of its landing tip up (U) is 0.55 and
+                the probability of its landing tip down (D) is 0.45. <br>
                 Suppose you flip two such thumbtacks, one at a time. <br>
-                The probability distribution for the possible outcomes of these flips is shown below. 
+                The probability distribution for the possible outcomes of these flips is shown below.
                 <br><br>
                 <table class="w3-center">
                     <tr>
@@ -1061,7 +1059,7 @@
                     One toss of two thumbsacks <br><br>
                     $
                     P(0\;ups) = P(DD) = 0.2116 \\[5ex]
-                    P(exactly\;\;1\;up) \\[3ex] 
+                    P(exactly\;\;1\;up) \\[3ex]
                     = P(UD\;\;or\;\;DU) \\[3ex]
                     = P(UD) + P(DU) \\[3ex]
                     = 0.2484 + 0.2484 \\[3ex]
@@ -1076,13 +1074,13 @@
 
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (22.) 
+                (22.)
 
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD22')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD22">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
@@ -1091,7 +1089,8 @@
     <div class="w3-row w3-container">
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (23.) When a fair coin is flipped, the probability of its landing heads (H) is 0.50 and the probability of its landing tails (T) is also 0.50. <br>
+                (23.) When a fair coin is flipped, the probability of its landing heads (H) is 0.50 and the probability
+                of its landing tails (T) is also 0.50. <br>
                 If a fair coin is flipped twice, the different possible arrangements would be HH, HT, TH, and TT. <br>
                 The probability distribution of these arrangements is shown below.
                 <br><br>
@@ -1122,7 +1121,7 @@
                     Two tosses of a fair coin <br><br>
                     $
                     P(0\;heads) = P(TT) = 0.25 \\[5ex]
-                    P(exactly\;\;1\;head) \\[3ex] 
+                    P(exactly\;\;1\;head) \\[3ex]
                     = P(HT\;\;or\;\;TH) \\[3ex]
                     = P(HT) + P(TH) \\[3ex]
                     = 0.25 + 0.25 \\[3ex]
@@ -1137,12 +1136,12 @@
 
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (24.) 
+                (24.)
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD24')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD24">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
@@ -1156,19 +1155,19 @@
                 <button class="solutions" onclick="solutions('solutionPD25')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD25">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
 
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (26.) 
+                (26.)
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD26')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD26">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
@@ -1182,19 +1181,19 @@
                 <button class="solutions" onclick="solutions('solutionPD27')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD27">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
 
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (28.) 
+                (28.)
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD28')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD28">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
@@ -1208,19 +1207,19 @@
                 <button class="solutions" onclick="solutions('solutionPD29')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD29">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
 
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (30.) 
+                (30.)
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD30')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD30">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
@@ -1234,19 +1233,19 @@
                 <button class="solutions" onclick="solutions('solutionPD31')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD31">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
 
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (32.) 
+                (32.)
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD32')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD32">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
@@ -1260,19 +1259,19 @@
                 <button class="solutions" onclick="solutions('solutionPD33')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD33">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
 
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (34.) 
+                (34.)
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD34')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD34">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
@@ -1286,19 +1285,19 @@
                 <button class="solutions" onclick="solutions('solutionPD35')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD35">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
 
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (36.) 
+                (36.)
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD36')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD36">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
@@ -1312,19 +1311,19 @@
                 <button class="solutions" onclick="solutions('solutionPD37')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD37">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
 
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (38.) 
+                (38.)
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD38')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD38">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
@@ -1338,19 +1337,19 @@
                 <button class="solutions" onclick="solutions('solutionPD39')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD39">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
 
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (40.) 
+                (40.)
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD40')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD40">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
@@ -1359,7 +1358,7 @@
     <br><br><br><br>
     <!-- Top of the Page -->
     <div class="w3-container" style="position:relative">
-        <a href="https://probability-distribution.appspot.com/probabilitydistribution.html"
+        <a href="https://samuelchukwuemeka.github.io/probability-distributions/probabilitydistribution.html"
             class="w3-button w3-xlarge w3-circle w3-khaki" style="position:absolute;top:-70px;right:24px">Top
         </a>
     </div>
@@ -1373,19 +1372,19 @@
                 <button class="solutions" onclick="solutions('solutionPD41')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD41">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
 
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (42.) 
+                (42.)
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD42')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD42">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
@@ -1399,19 +1398,19 @@
                 <button class="solutions" onclick="solutions('solutionPD43')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD43">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
 
         <div class="w3-half w3-container">
             <div class="w3-topbar w3-padding">
-                (44.) 
+                (44.)
                 <br><br>
                 <button class="solutions" onclick="solutions('solutionPD44')">Show/Hide Answer</button>
                 <div class="result" id="solutionPD44">
                     <br>
-                    
+
                 </div>
             </div>
         </div>
@@ -1421,9 +1420,12 @@
 
     <!-- Footer -->
     <footer class="khaki w3-center w3-padding-24">
-        <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel" target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel" /></a>
-        <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img src="images/twitter.png" alt="Follow me on twitter" /></a>
-        <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog" target="_blank"><img src="images/blogger.jpg" alt="Subscribe and follow my blog" /></a>
+        <a href="https://www.youtube.com/user/samuelchukwuemeka" title="Subscribe to my YouTube channel"
+            target="_blank"><img src="images/youtube.png" alt="Subscribe to my YouTube channel"></a>
+        <a href="https://twitter.com/samdom4peace" title="Follow me on twitter" target="_blank"><img
+                src="images/twitter.png" alt="Follow me on twitter"></a>
+        <a href="http://samueldominicchukwuemeka.blogspot.com/?view=flipcard" title="Subscribe and follow my blog"
+            target="_blank"><img src="images/blogger.jpg" alt="Subscribe and follow my blog"></a>
         <div id="google_translate_element"></div>
         <script type="text/javascript">
             function googleTranslateElementInit() {
@@ -1441,7 +1443,9 @@
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
     </script>
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
 </body>
+
 </html>
